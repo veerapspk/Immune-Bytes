@@ -1,0 +1,37 @@
+
+
+
+
+POST http://localhost:3000/user/create/
+Content-Type: application/json
+
+{
+  "email": "veerapspk1@gmail.com",
+  "company_name": "Finalize",
+  "age": 20,
+  "password": 2022,
+  "name": "pspk",
+  "date_of_birth": "2021-02-22"
+}
+###
+
+
+
+
+
+
+POST  http://localhost:3000/users/login/
+Content-Type: application/json
+
+{
+  "email": "veerapspk1@gmail.com",
+  "password":"2022"
+}
+
+###
+DELETE  http://localhost:3000/user/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZXJhcHNwazEyQGdtYWlsLmNvbSIsImlhdCI6MTY3NzA0OTUyMn0.W7gRE8I6UQiwLjmXnXhOCBM-fsBAUWJ5GRq9CfBgQrs
+
+### 
+GET http://localhost:3000/user/data/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InZlZXJhcHNwazFAZ21haWwuY29tIiwiaWF0IjoxNjc3MDUwMTI1fQ.rMOWKVgoD7gOH1AogIe8emVvm4wrupeKZfux-1PzynE
